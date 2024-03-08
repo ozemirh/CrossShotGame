@@ -17,7 +17,6 @@ public class CameraController : MonoBehaviour
     public GameObject initialSpawnPos;
     private GameObject initialCrossbow;
     private GameObject initialBall;
-    private GameObject ba;
     public Color32 crossbowColor;
     public Color32 ballColor;
     public float cameraAscendSpeed = 1.0f;
