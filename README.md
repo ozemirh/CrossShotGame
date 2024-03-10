@@ -1,0 +1,7 @@
+CrossShot is a mobile game project i have been working on since 2023 by myself. It is an arcade type and level based simple game, planned to be completed until the end of April 2024. It will have 100 levels at the end with many different mechanics and visuals. Here is some footage from the game. ![Screenshot_2024-03-09-00-15-56-870_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/c0ab8a5d-a06e-4b71-acd4-867a4545025a)
+![Screenshot_2024-03-09-00-27-03-035_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/0c2a28df-c2a2-4d3b-8f20-4b791f0c1199)
+![Screenshot_2024-03-09-00-26-42-946_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/6ec35473-a2ab-422c-9e8a-13cfdf9e043f)
+![Screenshot_2024-03-09-00-23-06-933_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/64ee278e-b4a0-47cf-9dd8-86ba1610cfaf)
+![Screenshot_2024-03-09-00-22-00-977_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/2a9757d6-8a6c-4b9e-8930-4854adb7c019)
+![Screenshot_2024-03-09-00-18-06-470_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/963bca37-da30-4ca3-9e92-1e880e0e51c1)
+![Screenshot_2024-03-09-00-16-17-479_com DefaultCompany CrossShotV2](https://github.com/ozemirh/CrossShotGame/assets/93376739/75cec3e9-b80b-4a82-866d-87eccbf09d1f)
