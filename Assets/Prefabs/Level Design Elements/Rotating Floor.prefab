@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a9d7a9ab017ce49b2571e8665b7fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRotation: -2
-  maxRotation: 92
+  minRotation: 0
+  maxRotation: 90
   duration: 1.5
   sawRotationSpeed: 20
   saw: {fileID: 0}

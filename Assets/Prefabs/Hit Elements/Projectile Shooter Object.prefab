@@ -49,7 +49,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 2506211093620439282, guid: a5ee4857292c4104793030c5e8c8018e, type: 3}
   spawnPoint: {fileID: 7230628011498415669}
   spawnInterval: 1.5
-  projectileSpeed: 300
+  projectileSpeed: 600
 --- !u!1 &5272586881778175986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,7 +4847,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7637220435837240872}
-  - component: {fileID: 3076088493932263486}
   m_Layer: 0
   m_Name: Cannonball Parent
   m_TagString: Untagged
@@ -33,23 +32,6 @@ Transform:
   - {fileID: 8408886120681861832}
   m_Father: {fileID: 8888446813713842322}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3076088493932263486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008774024011459062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ee6014117c4eca429c38d05aa97e9a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4607822644768622623, guid: 62fda690b4ecaa74982ed5ea9846ce42, type: 3}
-  launchPoint: {fileID: 7122088096265048888}
-  speed: 10
-  interval: 1
-  duration: 0
 --- !u!1 &4353877610307487292
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +320,7 @@ MonoBehaviour:
   - {x: -0.39018148, y: -0.6881852, z: 0}
   m_ShapePathHash: 2138083501
   m_Mesh: {fileID: 0}
-  m_InstanceId: -519310
+  m_InstanceId: 144102
   m_LocalBounds:
     m_Center: {x: -0.014707446, y: -0.043168247, z: 0}
     m_Extent: {x: 0.8805432, y: 0.8812764, z: 0}
@@ -641,7 +623,7 @@ MonoBehaviour:
   - {x: 0.5699328, y: -0.53906745, z: 0}
   m_ShapePathHash: 1791947655
   m_Mesh: {fileID: 0}
-  m_InstanceId: -519320
+  m_InstanceId: 144118
   m_LocalBounds:
     m_Center: {x: 0.021390617, y: -0.01554054, z: 0}
     m_Extent: {x: 0.661256, y: 0.5235269, z: 0}
@@ -654,6 +636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8888446813713842322}
+  - component: {fileID: 7847615673229773065}
   m_Layer: 0
   m_Name: Cannonball Thrower
   m_TagString: Untagged
@@ -679,3 +662,20 @@ Transform:
   - {fileID: 7122088096265048888}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &7847615673229773065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8943031750333048535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee6014117c4eca429c38d05aa97e9a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4607822644768622623, guid: 62fda690b4ecaa74982ed5ea9846ce42, type: 3}
+  launchPoint: {fileID: 7122088096265048888}
+  speed: 10
+  interval: 1
+  duration: 1

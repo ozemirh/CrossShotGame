@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7700837511217868838}
   m_Layer: 0
   m_Name: Air Gun Object
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3284950024955204665}
   - component: {fileID: 1567402203137402149}
   - component: {fileID: 3535455364462563489}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4951,7 +4951,7 @@ GameObject:
   - component: {fileID: 340047672049377194}
   m_Layer: 0
   m_Name: Air Cannon Gun
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5114,7 +5114,7 @@ GameObject:
   - component: {fileID: 5136232563823256733}
   m_Layer: 0
   m_Name: Air Cannon Base
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

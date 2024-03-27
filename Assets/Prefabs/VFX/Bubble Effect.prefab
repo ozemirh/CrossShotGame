@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5507149785665386623}
   - component: {fileID: 1506912076660920710}
   - component: {fileID: 436188553838236666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bubble Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3850,7 +3850,7 @@ ParticleSystem:
     radiusScale: 2.73
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 128503
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

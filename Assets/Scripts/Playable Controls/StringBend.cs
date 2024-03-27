@@ -190,4 +190,8 @@ public class StringBend : MonoBehaviour
     {
         cam = camera;
     }
+    public bool GetPermissionState()
+    {
+        return permission;
+    }
 }

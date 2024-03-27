@@ -53,13 +53,13 @@ public class LightControl : MonoBehaviour
     void ActivateObject(GameObject obj)
     {
         // Replace this with the actual code to turn on your object
-        obj.SetActive(true);
+        obj.SetActive(!obj.activeSelf);
     }
 
     void DeactivateObject(GameObject obj)
     {
         // Replace this with the actual code to turn off your object
-        obj.SetActive(false);
+        obj.SetActive(!obj.activeSelf);
     }
     IEnumerator ToggleSwitch()
     {

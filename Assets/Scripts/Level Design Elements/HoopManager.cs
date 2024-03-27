@@ -11,6 +11,7 @@ public class HoopManager : MonoBehaviour
     public bool score;
     public const int hoopsNumber = 3;
     private CameraController controller;
+    public Ground ground;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,10 @@ public class HoopManager : MonoBehaviour
         if (hoops.Count > 0) {
             if (controller.GetIsScored())
             {
+                if (ground != null)
+                {
+                    ground.EliminateRocketWhenScored();
+                }
                 hoops[0].transform.GetChild(0).GetComponent<CrossbowSpawn>().SetOriginalBall(controller.GetBall());
                 hoops[0].transform.GetChild(0).GetComponent<CrossbowSpawn>().SetOriginalCrossbow(controller.GetCrossbow());
                 controller.SetScoreValue(false);

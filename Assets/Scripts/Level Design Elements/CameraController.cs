@@ -37,6 +37,7 @@ public class CameraController : MonoBehaviour
         ball.transform.GetChild(0).GetComponent<SpriteRenderer>().color = ballColor;
         ball.transform.GetComponent<BallAscend>().enabled = false;
         crossbow.transform.GetChild(1).GetComponent<StringBend>().StartPermissionCoroutine();
+        ground.SpawnRocketIfRight();
     }
 
     void LateUpdate()
@@ -49,6 +50,7 @@ public class CameraController : MonoBehaviour
     }
     public void SetScoreValue(bool score)
     {
+        ground.SpawnRocketIfRight();
         isScored = score;
     }
     public bool GetIsScored()

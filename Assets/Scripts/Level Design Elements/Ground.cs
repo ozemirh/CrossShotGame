@@ -11,9 +11,12 @@ public class Ground : MonoBehaviour
     public GameObject foreGround;
     public GameObject button;
     public GameObject topRightButton;
+    public HoopManager hoopManager;
     CameraController controller;
     GameObject ball;
     public GameObject chainResetter;
+    public Launcher launchPad;
+    GameObject activeHoop;
     private void Start()
     {
         controller = Camera.main.GetComponent<CameraController>();
@@ -31,9 +34,34 @@ public class Ground : MonoBehaviour
         ball.SetActive(true);
         StartCoroutine(BallWake());
         topRightButton.SetActive(true);
+        if (launchPad != null && hoopManager != null)
+        {
+            SpawnRocketIfRight();
+        }
         if (chainResetter != null && chainResetter.transform.parent.gameObject.activeSelf)
         {
             chainResetter.GetComponent<Chain>().StartSwing();
+        }
+    }
+    public void SpawnRocketIfRight()
+    {
+        activeHoop = hoopManager.GetActiveHoop();
+        if (activeHoop == GetChosenHoop())
+        {
+            launchPad.SpawnRocket();
+            launchPad.ActivateRocket();
+        }
+    }
+    public GameObject GetChosenHoop()
+    {
+        activeHoop = GameObject.Find("Hoop " + launchPad.GetChosenHoop());
+        return activeHoop;
+    }
+    public void EliminateRocketWhenScored()
+    {
+        if (activeHoop == GetChosenHoop())
+        {
+            launchPad.CallEliminateRocket();
         }
     }
     IEnumerator BallWake()
