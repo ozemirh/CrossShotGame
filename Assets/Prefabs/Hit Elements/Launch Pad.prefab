@@ -99,7 +99,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocket: {fileID: 1170383598585483093, guid: a74841064136d3c4b8c5a90f30ce3dd4, type: 3}
-  throwSpeed: 1
+  chosenHoop: 0
+  moveSpeed: 10
+  delayBeforeStart: 1
+  accelerationTime: 1
 --- !u!60 &1777424936331631751
 PolygonCollider2D:
   m_ObjectHideFlags: 0

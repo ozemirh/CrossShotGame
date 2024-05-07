@@ -242,7 +242,7 @@ MonoBehaviour:
   minRotation: 0
   maxRotation: 180
   duration: 2
-  sawRotationSpeed: 20
+  sawRotationSpeed: 180
   saw: {fileID: 7550147985804450852}
   sawPos: {fileID: 1629717304825776932}
 --- !u!1001 &714962087568585602

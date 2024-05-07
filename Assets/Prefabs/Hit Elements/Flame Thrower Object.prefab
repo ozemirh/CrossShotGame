@@ -694,6 +694,10 @@ PrefabInstance:
       propertyPath: LightsModule.enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 383816919693522362, guid: 67e72a507c9df334881b8e65fd99fc7e, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 1015
+      objectReference: {fileID: 0}
     - target: {fileID: 5431335687648345825, guid: 67e72a507c9df334881b8e65fd99fc7e, type: 3}
       propertyPath: m_SortingOrder
       value: 2

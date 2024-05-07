@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 497027224974252419}
   - component: {fileID: 5808599845618930108}
   m_Layer: 8
-  m_Name: Bright Projectile Object
+  m_Name: Light Projectile Object
   m_TagString: Hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

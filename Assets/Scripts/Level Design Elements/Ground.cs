@@ -45,17 +45,27 @@ public class Ground : MonoBehaviour
     }
     public void SpawnRocketIfRight()
     {
-        activeHoop = hoopManager.GetActiveHoop();
-        if (activeHoop == GetChosenHoop())
+        if (hoopManager != null)
         {
-            launchPad.SpawnRocket();
-            launchPad.ActivateRocket();
+            activeHoop = hoopManager.GetActiveHoop();
+            if (activeHoop == GetChosenHoop())
+            {
+                launchPad.SpawnRocket();
+                launchPad.ActivateRocket();
+            }
         }
     }
     public GameObject GetChosenHoop()
     {
-        activeHoop = GameObject.Find("Hoop " + launchPad.GetChosenHoop());
-        return activeHoop;
+        if (launchPad != null)
+        {
+            activeHoop = GameObject.Find("Hoop " + launchPad.GetChosenHoop());
+            return activeHoop;
+        }
+        else
+        {
+            return null;
+        }
     }
     public void EliminateRocketWhenScored()
     {

@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
+    private const string LevelKey = "lastLevel";
     public GameObject ballPrefab;        
     private GameObject ball;
     public float offset = 4.2f;           
@@ -38,8 +40,8 @@ public class CameraController : MonoBehaviour
         ball.transform.GetComponent<BallAscend>().enabled = false;
         crossbow.transform.GetChild(1).GetComponent<StringBend>().StartPermissionCoroutine();
         ground.SpawnRocketIfRight();
+        SetCurrentLevel(SceneManager.GetActiveScene().buildIndex);
     }
-
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
@@ -48,6 +50,13 @@ public class CameraController : MonoBehaviour
         if (ballPos.y + offsetVector.y >= -0.44f)
         transform.position = ballPos + offsetVector;
     }
+    // Set the current level
+    public static void SetCurrentLevel(int level)
+    {
+        PlayerPrefs.SetInt(LevelKey, level);
+        PlayerPrefs.Save();
+    }
+    // Get the current level
     public void SetScoreValue(bool score)
     {
         ground.SpawnRocketIfRight();

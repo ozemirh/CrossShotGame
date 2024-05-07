@@ -36,9 +36,12 @@ public class Launcher : MonoBehaviour
             float elapsedTime = 0f;
             while (elapsedTime < 1f)
             {
-                float t = elapsedTime / 1f;
-                newRocket.transform.localPosition = Vector3.Lerp(initialPosition, targetPosition, t);
-                elapsedTime += Time.deltaTime;
+                if (newRocket)
+                {
+                    float t = elapsedTime / 1f;
+                    newRocket.transform.localPosition = Vector3.Lerp(initialPosition, targetPosition, t);
+                    elapsedTime += Time.deltaTime;
+                }
                 yield return null;
             }
             // Ensure the object reaches exactly the target position at the end
